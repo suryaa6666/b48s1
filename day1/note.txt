@@ -8,3 +8,9 @@ git push origin master
 
 additional :
 git status
+
+bikin branch baru + checkout :
+git branch -b nama-branch
+
+branch checkout : 
+git checkout
