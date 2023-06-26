@@ -1,0 +1,10 @@
+# github
+
+git init
+git remote add origin <nama-url>
+git add .
+git commit -m "message kamu"
+git push origin master
+
+additional :
+git status
