@@ -1,0 +1,33 @@
+input {
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container div label {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.form-container button {
+    margin-top: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 50px;
+}
