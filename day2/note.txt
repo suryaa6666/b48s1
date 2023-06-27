@@ -1,16 +1,22 @@
-# github
+#form
+- flexbox
+- border-radius
+- input, label, select option, textarea, button, form
 
-git init
-git remote add origin <nama-url>
-git add .
-git commit -m "message kamu"
-git push origin master
+#navbar
+- html semantic : nav
+- flex
+- flex-direction
+- justify-content vs align-items
+- unordered list & list item
+- text-decoration : none
+- list-style-type : none
+- border-style : none
 
-additional :
-git status
+#layouting
+- google fonts
+- external css -> cara import pakai link rel
+- font-size vs font-weight
 
-bikin branch baru + checkout :
-git branch -b nama-branch
-
-branch checkout : 
-git checkout
+#additional css
+- hover
