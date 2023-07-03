@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <img src="images/logo.png" />
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <form class="form-container">
+            <div>
+                <label>
+                    Name
+                </label>
+                <input id="input-name" />
+            </div>
+            <div>
+                <label>
+                    Email
+                </label>
+                <input id="input-email" />
+            </div>
+            <div>
+                <label>
+                    Phone Number
+                </label>
+                <input id="input-phone" />
+            </div>
+            <div>
+                <label>
+                    Subject
+                </label>
+                <select id="input-subject">
+                    <option value="">Pilih subject...</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Fullstack Developer">Fullstack Developer</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    Your message
+                </label>
+                <textarea id="input-message"></textarea>
+            </div>
+            <button type="submit" class="btn-submit" onclick="submitData(event)">Submit</button>
+        </form>
+    </div>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

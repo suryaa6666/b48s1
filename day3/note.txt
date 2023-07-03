@@ -1,0 +1,22 @@
+#form
+- flexbox
+- border-radius
+- input, label, select option, textarea, button, form
+
+#navbar
+- html semantic : nav
+- flex
+- flex-direction
+- justify-content vs align-items
+- unordered list & list item
+- text-decoration : none
+- list-style-type : none
+- border-style : none
+
+#layouting
+- google fonts
+- external css -> cara import pakai link rel
+- font-size vs font-weight
+
+#additional css
+- hover
