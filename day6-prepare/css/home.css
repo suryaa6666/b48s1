@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 75px;
+}
+
+.card-profile {
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 0px 10px;
+  border-radius: 10px;
+}
+
+.card-profile-img {
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.card-profile-desc {
+  color: tomato;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-profile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container-right {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.skills-img {
+  width: 50px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
