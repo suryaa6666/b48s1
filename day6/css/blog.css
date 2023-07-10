@@ -52,13 +52,13 @@ select {
   width: 100%;
   font-size: 20px;
   font-weight: 400;
-  padding: 8px;
   margin-top: 5px;
   margin-bottom: 20px;
   background: #f4f3f3;
   border: 1px solid #c4c4c4;
   border-radius: 8px;
   cursor: pointer;
+  padding: 1em 0;
 }
 
 .blog-form form .input-blog-image-group label p {
@@ -110,6 +110,7 @@ select {
   border: 2px solid #dbdbdb;
   border-radius: 8px;
   display: flex;
+  flex-direction: row;
 }
 
 .blog .blog-list .blog-list-item .blog-image {
@@ -203,4 +204,25 @@ select {
   font-size: 24px;
   line-height: 140%;
   text-align: justify;
+}
+
+@media only screen and (max-width : 600px) {
+  form {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .input-blog-image-group label {
+    width: 85%;
+    padding: 0 2em;
+  }
+
+  .input-blog-image-group {
+    width: 100%;
+    padding: 0.5em 0;
+  }
+
+  .blog .blog-list .blog-list-item {
+    flex-direction: column;
+  }
 }
