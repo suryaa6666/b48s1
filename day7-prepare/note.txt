@@ -1,7 +1,0 @@
-note : 
-size : 500px
-min-width => minimal lebar (>= 500px) 
-max-width => maksimal lebar (<= 500px)
-
-"col-1"
-"col-2"

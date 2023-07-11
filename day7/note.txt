@@ -1,0 +1,6 @@
+class -> cetakan
+object ->  instansiasi class
+inheritance -> pewarisan sifat parent
+polymorphism -> menimpa milik parent
+abstraction -> menutupi hal yang ribet
+encapsulation -> mengamankan data-data internal di class, misalnya properti
