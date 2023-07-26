@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Form Register</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/form-blog.css">
+  <link rel="stylesheet" href="../assets/css/all.css" />
+  <link rel="stylesheet" href="../assets/css/nav.css" />
+  <link rel="icon" type="image/x-icon" href="public/images/logo.png">
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li>
+        <img src="../assets/images/logo.png" />
+      </li>
+      <li class="collapse-item"><a href="/">Home</a></li>
+      <li class="collapse-item"><a href="/blog">Blog</a></li>
+      <li class="collapse-item"><a href="/testimonial">Testimonial</a></li>
+    </ul>
+    <div class="nav-right collapse-item">
+      <a href="contact  ">Contact Me</a>
+    </div>
+    <div class="nav-right" id="hamburger-btn">
+      <button onclick="openHamburger()">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+  </nav>
+  <div class="hamburger-container" id="hamburger-container">
+    <a href="home " class="nav-active">Home</a>
+    <a href="blog  ">Blog</a>
+    <a href="contact  ">Contact Me</a>
+    <a href="testimonial  ">Testimonial</a>
+  </div>
+
+
+  <!-- Form -->
+
+  <div class="container-fluid d-flex justify-content-center align-items-center">
+
+    <div class="container-form">
+
+      {{if .FlashMessage}}
+      {{if .FlashStatus}}
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>{{.FlashMessage}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {{else}}
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>{{.FlashMessage}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {{end}}
+      {{end}}
+
+
+      <h2 class="mb-3 text-center">Form Register</h2>
+      <form action="/register" method="POST">
+        <div class="mb-3">
+          <label for="inputName" class="form-label">Name</label>
+          <input type="text" name="inputName" id="inputName" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input type="text" name="inputEmail" id="inputEmail" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="inputPassword" class="form-label">Password</label>
+          <input type="password" name="inputPassword" id="inputPassword" class="form-control" required>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-primary text-white">Register</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
