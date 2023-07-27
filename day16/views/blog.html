@@ -114,7 +114,7 @@
       {{ range $blog := .Blogs }}
       <div class="blog-list-item">
         <div class="blog-image">
-          <img src="/assets/images/blog-img.png" alt="" />
+          <img src="/uploads/{{$blog.Image}}" alt="" />
         </div>
         <div class="blog-content">
           {{ if $.UserLoginSession.IsLogin }}
